@@ -13,17 +13,17 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. My Pipeline has #6 notable steps to detect lane lines from a picture or video stream. 
+###1. My pipeline has #6 notable steps to detect lane lines from a picture or video stream. 
 
-Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+    1. Gray scale the image to help filter out noise for edge detection
+    2. Do canny edge detection to identify all edges
+    3. Find Region of Interests for filter out un-wanted edges
+    4. Hough Transform to identify x, y values of each line detected
+    5. Average left and right line slopes then extrapolate lane lines
+       a. To do this I seperated the right and left lines by identifying the slope of each line (look in draw_lines() method)
+    6. Draw in lane lines with thicker weights
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+![alt text][output/lane_line.png]
 
 
 ###2. Identify potential shortcomings with your current pipeline
