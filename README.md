@@ -11,16 +11,25 @@ The goals / steps of this project are the following:
 ###1. Lane Finding Pipeline
 
 1. Gray scale the image to help filter out noise for edge detection
+  
+  ![gray](output/grayscale.png)
+
 2. Do canny edge detection to identify all edges
+  
+  ![alt text](output/canny.png)
+
 3. Find Region of Interests for filter out un-wanted edges
+  
+  ![alt text](output/masked.png)
+
 4. Hough Transform to identify x, y values of each line detected
 5. Average left and right line slopes then extrapolate lane lines. To do this I seperated the right and left lines by identifying the slope of each line (look in draw_lines() method)
+  
+  ![alt text](output/hough.png)
+
 6. Draw in lane lines with thicker weights
-
-The output of each frame would look something like this
-
-![alt text](output/lane_line.png)
-
+  
+  ![alt text](output/final.png)
 
 ###2. Identify potential shortcomings with your current pipeline
 
