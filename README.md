@@ -4,7 +4,8 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-###### The video output files can be found in the output folder. 
+###### example output. Other video outputs can be found in the output folder. 
+  ![gif](output/first.gif)
 
 ### Reflection
 
@@ -16,20 +17,20 @@ The goals / steps of this project are the following:
 
 2. Do canny edge detection to identify all edges
   
-  ![alt text](output/canny.png)
+  ![canny](output/canny.png)
 
 3. Find Region of Interests for filter out un-wanted edges
   
-  ![alt text](output/masked.png)
+  ![masked](output/masked.png)
 
 4. Hough Transform to identify x, y values of each line detected
 5. Average left and right line slopes then extrapolate lane lines. To do this I seperated the right and left lines by identifying the slope of each line (look in draw_lines() method)
   
-  ![alt text](output/hough.png)
+  ![hough](output/hough.png)
 
 6. Draw in lane lines with thicker weights
   
-  ![alt text](output/final.png)
+  ![final](output/final.png)
 
 ###2. Identify potential shortcomings with your current pipeline
 
