@@ -4,7 +4,9 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-###### example output. Other video outputs can be found in the output folder. 
+###### Code can be found in P1.ipynb
+
+###### Example output. Other video outputs can be found in the output folder. 
   ![gif](output/first.gif)
 
 ### Reflection
