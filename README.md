@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. My pipeline has #6 notable steps to detect lane lines from a picture or video stream. 
+###1. Lane Finding Pipeline
 
     1. Gray scale the image to help filter out noise for edge detection
     2. Do canny edge detection to identify all edges
@@ -23,19 +23,21 @@ The goals / steps of this project are the following:
        a. To do this I seperated the right and left lines by identifying the slope of each line (look in draw_lines() method)
     6. Draw in lane lines with thicker weights
 
-![alt text][output/lane_line.png]
+The output of each frame would look something like this
+
+![alt text](output/lane_line.png)
 
 
 ###2. Identify potential shortcomings with your current pipeline
 
+A potential shortcoming is that the region of interests is not dynamic. This can cause the algorithm to detect unwanted lines
+that could be far from the actual lane lines. I made the region of interests as wide as possible just to it can detect the
+actual lange line when it needs to.
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+Another potential shortcoming is that there are some x, y vaules of the line given from Hough Transform to be Nan. This causes 
+the lane line to not be detected therefore there are moments where the lane line was not detected. 
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+The values of the hough transform (rho, theta, threshold, minimum line lengh, max line gap) could be tweaked better to be 
+optimized. Also if the region of interest is dynamic, it would also filter out un-wanted lines. 
