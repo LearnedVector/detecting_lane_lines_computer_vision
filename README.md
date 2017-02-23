@@ -36,7 +36,7 @@ Then we apply the steps below to detect lane lines
   
   ![hough](output/hough.png)
 
-6. Draw in lane lines with thicker weights
+6. Draw in lane lines with thicker weights and apply to original image
   
   ![final](output/final.png)
 
