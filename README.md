@@ -6,12 +6,18 @@ The goals / steps of this project are the following:
 
 ###### Code can be found in P1.ipynb
 
-###### Example output. Other video outputs can be found in the output folder. 
+###### Final output. (More video outputs can be found in the output folder.) 
   ![gif](output/first.gif)
 
 ### Reflection
 
 ###1. Lane Finding Pipeline
+
+Each frame from the the video looks something like this. 
+
+   <img src="./test_images/solidYellowLeft.jpg" width="300" />
+
+Then we apply the steps below to detect lane lines
 
 1. Gray scale the image to help filter out noise for edge detection
   
